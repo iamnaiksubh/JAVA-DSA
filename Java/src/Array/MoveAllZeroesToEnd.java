@@ -8,6 +8,7 @@ public class MoveAllZeroesToEnd {
         ar[j] = temp;
     }
 
+    // TC : O(N) SC : O(1)
     static void pushZeroesToEnd(int[] ar){
         int count = 0;
 

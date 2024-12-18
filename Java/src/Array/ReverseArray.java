@@ -7,6 +7,7 @@ public class ReverseArray {
         ar[j] = temp;
     }
 
+    // TC : O(N) SC : O(1)
     static void reverseArray(int[] arr){
         int p1 = 0, p2 = arr.length - 1;
 

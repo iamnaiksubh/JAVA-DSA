@@ -2,6 +2,7 @@ package Array;
 
 public class SecondLargestElement {
 
+    // TC : O(N) SC : O(1)
     static int getSecondLargestElement(int[] ar){
         int largestElement = Integer.MIN_VALUE;
         int secondLargestElement = Integer.MIN_VALUE;

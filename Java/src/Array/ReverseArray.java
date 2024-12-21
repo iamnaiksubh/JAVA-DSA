@@ -1,14 +1,14 @@
 package Array;
 
 public class ReverseArray {
-    static void swap(int[] ar, int i, int j){
+    private static void swap(int[] ar, int i, int j){
         int temp = ar[i];
         ar[i] = ar[j];
         ar[j] = temp;
     }
 
     // TC : O(N) SC : O(1)
-    static void reverseArray(int[] arr){
+    private static void reverseArray(int[] arr){
         int p1 = 0, p2 = arr.length - 1;
 
         while(p1 < p2){

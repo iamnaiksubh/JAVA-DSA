@@ -2,14 +2,14 @@ package Array;
 
 public class MoveAllZeroesToEnd {
 
-    static void swap(int[] ar, int i, int j){
+    private static void swap(int[] ar, int i, int j){
         int temp = ar[i];
         ar[i] = ar[j];
         ar[j] = temp;
     }
 
     // TC : O(N) SC : O(1)
-    static void pushZeroesToEnd(int[] ar){
+    private static void pushZeroesToEnd(int[] ar){
         int count = 0;
 
         for(int i=0; i<ar.length; i++){

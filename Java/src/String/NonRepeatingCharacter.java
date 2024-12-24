@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class NonRepeatingCharacter {
 
+    // TC : O(N) SC : O(N)
     private static char getFirstNonRepeatingCharacter(String s){
         HashMap<Character, Integer> map = new LinkedHashMap<>();
 

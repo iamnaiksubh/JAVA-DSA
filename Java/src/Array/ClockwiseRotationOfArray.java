@@ -1,6 +1,6 @@
 package Array;
 
-public class RotateArray {
+public class ClockwiseRotationOfArray {
 
     // TC : O(d*N) SC : O(1)
     static void rotateArrayApproach1(int[] arr, int d){
@@ -34,10 +34,10 @@ public class RotateArray {
 
     // TC : O(N) SC : O(1)
     static void rotateArrayApproach2(int[] arr, int d){
-        int rotateBy = d % arr.length - 1;
-        reverse(arr, 0, rotateBy);
-        reverse(arr, rotateBy + 1, arr.length - 1);
+        int rotateBy = d % arr.length;
         reverse(arr, 0, arr.length - 1);
+        reverse(arr, 0, rotateBy - 1);
+        reverse(arr, rotateBy, arr.length - 1);
     }
 
     public static void main(String[] args) {
